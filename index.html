@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar — Support</title>
+<style>
+  :root { --ink:#0B1620; --muted:#4E5E6B; --line:#DCE3EA; --mint:#3FF5B5; --mint-ink:#06251A; --bg:#F1F4F7; --card:#FFFFFF; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:560px; margin:0 auto; padding:56px 20px 80px; }
+  .brand { color:#12b886; font-weight:800; letter-spacing:.2px; font-size:15px; }
+  h1 { font-size:30px; margin:8px 0 6px; letter-spacing:-.4px; }
+  p.sub { color:var(--muted); margin:0 0 28px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px; }
+  label { display:block; font-size:13px; font-weight:600; color:var(--muted); margin:14px 0 6px; }
+  input, textarea { width:100%; border:1px solid var(--line); border-radius:10px; padding:12px 14px;
+    font:inherit; color:var(--ink); background:#fff; }
+  textarea { min-height:130px; resize:vertical; }
+  button { margin-top:18px; width:100%; border:0; border-radius:12px; padding:14px;
+    background:var(--mint); color:var(--mint-ink); font-weight:700; font-size:16px; cursor:pointer; }
+  .foot { color:var(--muted); font-size:13px; margin-top:26px; text-align:center; }
+  .foot a { color:#0077B6; text-decoration:none; }
+  .hp { position:absolute; left:-9999px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">Radar</div>
+    <h1>Support</h1>
+    <p class="sub">Have a question, found a bug, or need help with a purchase? Send us a message and we'll get back to you by email.</p>
+
+    <div class="card">
+      <!-- Form powered by Web3Forms. Your email is stored in Web3Forms, NOT on this page. -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="REPLACE_WITH_YOUR_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="Radar — support message">
+        <input type="hidden" name="from_name" value="Radar Support">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+        <label for="email">Your email (so we can reply)</label>
+        <input id="email" type="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">How can we help?</label>
+        <textarea id="message" name="message" placeholder="Describe your question or issue…" required></textarea>
+
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+
+    <p class="foot">Radar — Bluetooth device finder · <a href="privacy.html">Privacy Policy</a></p>
+  </div>
+</body>
+</html>
